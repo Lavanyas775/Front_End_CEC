@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(96, 106, 132);font-family:'Courier New', Courier, monospace;
+        }
+        form{
+            margin-top: 200px;
+            padding: 200px;
+            background-color:aliceblue;font-family:'Times New Roman', Times, serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        label{
+            color:rgb(219, 138, 17);background-color:beige;font-family: Arial, Helvetica, sans-serif;
+        }
+        .pass{
+            color:firebrick;background-color: black;
+        }
+        .hgyr{
+            border: 5px solid blue;
+            border-radius: 50px;
+            padding: 70px;
+            margin: 20px;
+        }
+        #Email{
+            font-size:larger;
+        }
+    </style>
+</head>
+<body>
+    <header>City Enginering College</header>
+    <nav>
+        <ul>
+            <li><a href="./forms.html" target="_blank">forms</a></li>
+            <li><a href="../Day1/tabels.html" target="blanks">table</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align:center;background-color:rgb(72, 98, 118);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Basic Form</h1>
+    <form action="/submit" method="POST">
+        <div class="hgyr">
+                 <label for="name">NAME:</label>
+        <input type="text" id="name" name="name" required/><br><br>   
+        </div>
+        <label for="Email">EMAIL:</label>
+        <input type="Email" id="Email" name="Email" required/><br><br>
+        <label class="pass" for="password">PASSWORD:</label>
+        <input type="password" id="password" name="pasword" required/><br><br>
+        <label for="date">DATE:</label>
+        <input type="date" id="date" name="date" required/><br><br>
+        <label for="male">MALE</label>
+        <input type="radio" id="male" name="Gender" value="male">
+        <label for="female">FEMALE</label>
+        <input type="radio" id="female" name="Gender" value="female"><br><br>
+        <h3>Terms and conditions</h3>
+        <input type="checkbox" name="terms" required>
+        I agree to the Terms and conditions</label><br><br>
+        <label for="Department">DEPARTMENT</label>
+        <select id="Department" name="Department">
+            <option value="ISE">ISE</option>
+            <option value="CSE">CSE</option>
+            <option value="AI&ML">AI&ML</option>
+            <option value="ME">ME</option>
+            <option value="CIVL">CIVL</option>
+            <option value="EC">EC</option>
+        </select><br> <br>
+        <textarea>Discription</textarea><br><br>
+        <label for="video">upload video </label>
+        <input type="file" id="video" name="video" accept="video"><br><br>
+         <label for="pdf">Upload PDF </label>
+        <input type="file" id="pdf" name="pdf" accept="pdf/*"><br><br>
+         <label for="application">Upload Application </label>
+        <input type="file" id="application" name="application" accept="application/*"><br><br>
+         <label for="rating">Give your rating</label>
+        <input type="range" id="range" name="range" min="0"><br><br>
+        <label for="color">choose a colour</label>
+        <input type="color" id="color" name="color"><br><br>
+        <input type="submit" value="submit"/><br><br>
+        <button type="reset">Reset</button>
+        
+    </form>
+</body>
+</html>
