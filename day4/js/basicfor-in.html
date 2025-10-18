@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="details">it changes</p>
+    <script>
+        //example object
+        const person={
+            name:"Alice",
+            age:25,
+            city:"New York",
+        };
+        //using for-in loop the obj
+        for(let key in person) {
+            console.log(key + ":",person[key]);
+        }
+        const  name="Alice";
+        const age=25;
+        const city="New York";
+         document.getElementById("details").innerText="hello,I am "+name+"I am "+age+" years old and i am from "+city+" city";  
+    </script>
+    
+</body>
+</html>
